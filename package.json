@@ -8,6 +8,7 @@
   },
   "author": "Damien",
   "dependencies": {
-    "bleacon": "^0.5.1"
+    "bleacon": "^0.5.1",
+    "xmlhttprequest": "^1.8.0"
   }
 }
