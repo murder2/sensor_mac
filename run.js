@@ -74,7 +74,9 @@ function post(path, body, opt_callback) {
 }
 
 function beaconEquals(b1, b2) {
-  return b1.uuid == b2.uuid && b1.major == b2.major && b1.minor == b2.minor;
+  const rv = (b1.uuid == b2.uuid || b1.uid == b2.uuid || b1.uuid == b2.uid || b1.uid == b2.uid) && b1.major == b2.major && b1.minor == b2.minor;
+  debug('beacon equals returns '+ rv);
+  return rv;
 }
 
 // Send an event to the server
